@@ -24,8 +24,12 @@ using Microsoft.Extensions.Options;
 var builder = new HostApplicationBuilder(args);
 builder.Services.AddSingleton<IFooService, FooService>();
 
+// test config works ...
 var testSection = builder.Configuration.GetSection("ApiSettings:TwitterApiKey");
 System.Console.WriteLine(testSection.Value);
 
 
 using var host = builder.Build();
+
+// Здесь Host встает на ожидание и принимает всякие-разные запросы
+await host.RunAsync();
