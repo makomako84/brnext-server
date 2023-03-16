@@ -14,6 +14,4 @@ public class Startup
             System.Console.WriteLine(TwitterApiKey.Value);
 
         }
-
-        public ApiSettings ApiSettings { get; private set; }
     }

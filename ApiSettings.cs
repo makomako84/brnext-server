@@ -1,6 +1,6 @@
  public class ApiSettings
     {
-        public string TwitterApiKey { get; set; }
-        public string TwitterApiSecret { get; set; }
-        public string BearerToken { get; set; }
+        public string TwitterApiKey { get; set; } = String.Empty;
+        public string TwitterApiSecret { get; set; } = String.Empty;
+        public string BearerToken { get; set; } = String.Empty;
     }
